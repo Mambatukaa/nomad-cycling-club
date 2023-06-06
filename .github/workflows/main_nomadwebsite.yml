@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'nomadwebsite'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F37EE512399B47DC94F5D681DA28AE17 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3CEAFD39AEA845078EABC5F4B9F66729 }}
           package: .
