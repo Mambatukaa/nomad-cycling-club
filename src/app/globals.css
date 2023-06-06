@@ -20,19 +20,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-    font-family: 'Poppins', sans-serif;
-  background: linear-gradient(
-      to bottom,
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer components {
   .menu-item {
-    @apply text-white h-full font-bold  cursor-pointer pl-7
-
+    @apply text-white h-full font-bold cursor-pointer pl-7 hover:text-yellow active:text-yellow
   }
 
 }
