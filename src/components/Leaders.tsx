@@ -1,5 +1,5 @@
-import Image from "next/image";
 import LeaderCard from "./common/LeaderCard";
+import { LEADERS } from "../contants";
 
 const Leaders = () => {
   return (
@@ -16,7 +16,9 @@ const Leaders = () => {
           </p>
         </div>
 
-        <LeaderCard leader={{}} />
+        {LEADERS.map((leader) => (
+          <LeaderCard key={leader.id} leader={leader} />
+        ))}
       </div>
     </div>
   );

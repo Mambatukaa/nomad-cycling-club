@@ -1,36 +1,34 @@
+import { ILeader } from "@/types";
 import Image from "next/image";
 
 type LeaderCardProps = {
-  leader: any;
+  leader: ILeader;
 };
 
 const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
+  const { fullName, summary, role, avatar } = leader;
+
   return (
     <div className="mt-16">
       <div className="relative max-w-sm rounded-lg bg-white p-8 text-black">
-
         <Image
-          className="absolute h-20 w-20 -top-10 rounded-full object-cover"
-          src="/assets/images/profile.JPG"
+          className="absolute -top-10 h-20 w-20 rounded-full object-cover"
+          src={avatar}
           width={80}
           height={80}
           alt="logo"
         />
 
-        <p className="text-lg mt-5">
-          Our club is dedicated to providing a welcoming and supportive
-          environment for all cyclists, regardless of their skill level or
-          backgroud.
-        </p>
+        <p className="mt-5 text-lg">{summary}</p>
 
         <hr className="my-3 h-0.5 rounded bg-black" />
 
         <div>
-          <p className="font-bold">Lydia Westervelt</p>
+          <p className="font-bold">{fullName}</p>
 
-          <p>Software engineer</p>
+          <p>{role}</p>
 
-          <div className="flex mt-2">
+          <div className="mt-2 flex">
             <a
               href="https://www.facebook.com/nomadcyclingclub"
               target="_blank"
