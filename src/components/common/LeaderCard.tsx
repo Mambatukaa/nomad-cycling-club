@@ -9,7 +9,7 @@ const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
   const { fullName, summary, role, avatar } = leader;
 
   return (
-    <div className="mt-16">
+    <div className="mt-16 mr-8">
       <div className="relative max-w-sm rounded-lg bg-white p-8 text-black">
         <Image
           className="absolute -top-10 h-20 w-20 rounded-full object-cover"
@@ -19,7 +19,7 @@ const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
           alt="logo"
         />
 
-        <p className="mt-5 text-lg">{summary}</p>
+        <p className="mt-5 text-lg h-48">{summary}</p>
 
         <hr className="my-3 h-0.5 rounded bg-black" />
 

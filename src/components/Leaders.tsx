@@ -16,9 +16,11 @@ const Leaders = () => {
           </p>
         </div>
 
-        {LEADERS.map((leader) => (
-          <LeaderCard key={leader.id} leader={leader} />
-        ))}
+        <div className="flex flex-row">
+          {LEADERS.map((leader) => (
+            <LeaderCard key={leader.id} leader={leader} />
+          ))}
+        </div>
       </div>
     </div>
   );
