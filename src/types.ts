@@ -9,5 +9,5 @@ export interface ILeader {
   summary: string;
   avatar: string;
   role: string;
-  socialAccounts: ISocialAccount[];
+  socialAccounts?: ISocialAccount[];
 }
