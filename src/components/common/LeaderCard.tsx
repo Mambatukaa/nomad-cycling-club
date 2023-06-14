@@ -1,4 +1,6 @@
 import { ILeader } from "@/types";
+import React from "react";
+
 import Image from "next/image";
 
 type LeaderCardProps = {
@@ -9,17 +11,17 @@ const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
   const { fullName, summary, role, avatar } = leader;
 
   return (
-    <div className="mt-16 mr-8">
-      <div className="relative max-w-sm rounded-lg bg-white p-8 text-black">
+    <div className="mr-8 mt-16">
+      <div className="relative max-w-sm rounded-lg bg-gray-200 p-8 text-black h-96">
         <Image
-          className="absolute -top-10 h-20 w-20 rounded-full object-cover"
+          className="absolute -top-12 h-24 w-24 rounded-full object-cover"
           src={avatar}
           width={80}
           height={80}
           alt="logo"
         />
 
-        <p className="mt-5 text-lg h-48">{summary}</p>
+        <p className="mb-8 mt-10 text-lg">{summary}</p>
 
         <hr className="my-3 h-0.5 rounded bg-black" />
 
@@ -27,7 +29,6 @@ const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
           <p className="font-bold">{fullName}</p>
 
           <p>{role}</p>
-
           <div className="mt-2 flex">
             <a
               href="https://www.facebook.com/nomadcyclingclub"

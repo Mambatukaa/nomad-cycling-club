@@ -1,5 +1,11 @@
+"use client";
 import LeaderCard from "./common/LeaderCard";
 import { LEADERS } from "../contants";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 
 const Leaders = () => {
   return (
@@ -16,10 +22,23 @@ const Leaders = () => {
           </p>
         </div>
 
-        <div className="flex flex-row">
-          {LEADERS.map((leader) => (
-            <LeaderCard key={leader.id} leader={leader} />
-          ))}
+        <div className="my-14">
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={20}
+            centeredSlides={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+          >
+
+            {LEADERS.map((leader, index) => (
+              <SwiperSlide key={leader.id} virtualIndex={index}>
+                <LeaderCard key={leader.id} leader={leader} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
