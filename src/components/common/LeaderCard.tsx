@@ -12,7 +12,7 @@ const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
 
   return (
     <div className="mr-8 mt-16">
-      <div className="relative max-w-sm rounded-lg bg-gray-200 p-8 text-black h-96">
+      <div className="relative h-96 max-w-sm rounded-lg bg-white p-8 text-black">
         <Image
           className="absolute -top-12 h-24 w-24 rounded-full object-cover"
           src={avatar}
@@ -29,16 +29,18 @@ const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
           <p className="font-bold">{fullName}</p>
 
           <p>{role}</p>
-          <div className="mt-2 flex">
+
+          <div className="mt-1.5 flex">
+
             <a
               href="https://www.facebook.com/nomadcyclingclub"
               target="_blank"
               role="button"
-              className="mr-1 rounded-full bg-gray-200 p-1"
+              className="mr-1.5 rounded-full bg-gray-300 p-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 rounded-full bg-social-facebook"
+                className="h-5 w-5 rounded-full bg-social-facebook p-1"
                 fill="white"
                 viewBox="0 0 24 24"
               >
@@ -50,11 +52,11 @@ const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
               href="https://www.facebook.com/nomadcyclingclub"
               target="_blank"
               role="button"
-              className="mr-1 rounded-full bg-gray-200 p-1"
+              className="mr-1 rounded-full bg-gray-300 p-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 rounded-full bg-social-facebook"
+                className="h-5 w-5 rounded-full bg-social-twitter p-1"
                 fill="white"
                 viewBox="0 0 24 24"
               >
