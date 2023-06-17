@@ -4,7 +4,7 @@ import Background from "../../public/assets/images/background.jpg";
 
 const About: React.FC = () => {
   return (
-    <div className="relative flex h-screen">
+    <div className="relative flex h-[calc(100vh-64px)]">
       <div>
         <Image
           src={Background}
