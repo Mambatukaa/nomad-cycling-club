@@ -9,7 +9,7 @@ import { Pagination } from "swiper";
 
 const Leaders = () => {
   return (
-    <div className="bg-gray-300 py-10">
+    <div className="relative flex h-full bg-gray-300 py-10">
       <div className="container mx-auto flex-row">
         <div>
           <h1 className="text-5xl font-bold text-blue-primary">
@@ -32,7 +32,6 @@ const Leaders = () => {
             }}
             modules={[Pagination]}
           >
-
             {LEADERS.map((leader, index) => (
               <SwiperSlide key={leader.id} virtualIndex={index}>
                 <LeaderCard key={leader.id} leader={leader} />
