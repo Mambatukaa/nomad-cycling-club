@@ -1,132 +1,48 @@
+"use client";
 import Image from "next/image";
+import * as React from "react";
+import Lightbox from "yet-another-react-lightbox";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Counter from "yet-another-react-lightbox/plugins/counter";
+
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import "yet-another-react-lightbox/plugins/counter.css";
+import GalleryCard from "./common/GalleryCard";
 
 const Gallery = () => {
+  const [open, setOpen] = React.useState(false);
+  const [slides, setSlides] = React.useState([
+    { src: "/assets/images/gallery/image1.jpeg" },
+    { src: "/assets/images/gallery/image2.jpeg" },
+    { src: "/assets/images/gallery/image3.jpeg" },
+  ]);
+
   return (
-    <div className="flex bg-white pb-20">
-
+    <div className="flex h-[calc(100vh-64px)] bg-white pb-20">
       <div className="container mx-auto">
+        <h1 className="my-10 text-5xl font-bold text-blue-primary">
+          Picture Gallery
+        </h1>
 
-          <h1 className="text-5xl font-bold text-blue-primary my-10">
-            Picture Gallery
-          </h1>
-
-        <div className="grid grid-cols-2 h-96">
-
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image1.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
+        <div className="grid h-96 grid-cols-2">
+          <div className="relative p-1" onClick={() => setOpen(true)}>
+            <GalleryCard title="2021 Competition" />
           </div>
 
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image2.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
+          <div className="relative p-1">
+            <GalleryCard title="2022 Competition" />
           </div>
-
         </div>
-
-        <div className="grid grid-cols-4 h-96">
-
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image3.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
-          </div>
-
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image4.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
-          </div>
-
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image11.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
-          </div>
-
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image6.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
-          </div>
-
-        </div>
-
-        <div className="grid grid-cols-2 h-96">
-
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image7.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
-          </div>
-
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image8.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
-          </div>
-
-        </div>
-
-        <div className="grid grid-cols-1 h-128">
-
-          <div className="relative p-3">
-
-            <Image
-              src="/assets/images/gallery/image13.jpeg"
-              fill={true}
-              objectFit="cover"
-              alt="gallery"
-              className="pt-3 px-1.5"
-            />
-          </div>
-
-        </div>
-
-
       </div>
+      <Lightbox
+        open={open}
+        counter={{ container: { style: { top: "unset", bottom: 0 } } }}
+        plugins={[Thumbnails, Zoom, Counter]}
+        close={() => setOpen(false)}
+        slides={slides}
+      />
     </div>
   );
 };
