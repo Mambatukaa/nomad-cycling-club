@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 rounded-full p-0.5 bg-social-facebook"
+                className="h-5 w-5 rounded-full bg-social-facebook p-0.5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 rounded-full p-0.5 bg-social-twitter"
+                className="h-5 w-5 rounded-full bg-social-twitter p-0.5"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >

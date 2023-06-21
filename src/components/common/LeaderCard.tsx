@@ -31,7 +31,6 @@ const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
           <p>{role}</p>
 
           <div className="mt-1.5 flex">
-
             <a
               href="https://www.facebook.com/nomadcyclingclub"
               target="_blank"

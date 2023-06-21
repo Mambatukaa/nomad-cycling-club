@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
-    domains: ['avatars.githubusercontent.com'],
+    domains: ["avatars.githubusercontent.com"],
     remotePatterns: [
       {
         protocol: "https",
