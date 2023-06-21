@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex w-full justify-center bg-blue-dark">
+    <div id="contact" className="flex w-full justify-center bg-blue-dark">
       <div className="container py-7">
         <div className="flex items-center justify-between">
           <div className="flex-col">

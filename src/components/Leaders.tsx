@@ -9,7 +9,7 @@ import { Pagination } from "swiper";
 
 const Leaders = () => {
   return (
-    <div className="relative flex h-[calc(100vh-64px)] bg-gray-300 py-10">
+    <div id="leaders" className="relative flex h-[calc(100vh-64px)] bg-gray-300 py-10">
       <div className="container mx-auto flex-row self-center">
         <div>
           <h1 className="text-5xl font-bold text-blue-primary">

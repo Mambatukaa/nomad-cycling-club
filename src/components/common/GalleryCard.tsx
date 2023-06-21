@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { ReactElement, FC } from "react";
 
 interface IProps {
   title: string;
   description?: string;
 }
 
-const GalleryCard = ({ title, description }: IProps) => {
+const GalleryCard: FC<IProps> = ({ title, description }): ReactElement => {
   return (
     <div className="pt-3">
       <div className="group relative aspect-video cursor-pointer overflow-hidden">

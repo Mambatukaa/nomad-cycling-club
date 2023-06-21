@@ -1,5 +1,5 @@
 import { ILeader } from "@/types";
-import React from "react";
+import React, { FC, ReactElement } from "react";
 
 import Image from "next/image";
 
@@ -7,7 +7,7 @@ type LeaderCardProps = {
   leader: ILeader;
 };
 
-const LeaderCard: React.FC<LeaderCardProps> = ({ leader }) => {
+const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
   const { fullName, summary, role, avatar } = leader;
 
   return (

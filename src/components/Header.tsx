@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Link from 'next/link'
 
 const Header: React.FC = () => {
   const pathname = usePathname();
@@ -20,18 +21,18 @@ const Header: React.FC = () => {
         />
 
         <div className="flex flex-1 items-center justify-end">
-          <a className="menu-item" href="#home">
+          <Link className="menu-item" href="#about">
             Who we are
-          </a>
-          <a className="menu-item" href="#gallery">
+          </Link>
+          <Link className="menu-item" href="#leaders">
             Leadership
-          </a>
-          <a className="menu-item" href="#gallery">
+          </Link>
+          <Link className="menu-item" href="#gallery">
             Gallery
-          </a>
-          <a className="menu-item" href="#contact">
+          </Link>
+          <Link className="menu-item" href="#contact">
             Contact
-          </a>
+          </Link>
         </div>
       </nav>
     </header>
