@@ -20,7 +20,7 @@ const Gallery = () => {
   ]);
 
   return (
-    <div id="gallery" className="flex h-[calc(100vh-64px)] bg-white pb-20">
+    <div id="gallery" className="flex h-screen bg-white pb-20">
       <div className="container mx-auto">
         <h1 className="my-10 text-5xl font-bold text-blue-primary">
           Picture Gallery

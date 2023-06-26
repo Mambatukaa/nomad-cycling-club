@@ -3,11 +3,12 @@ import Image from "next/image";
 const Footer: React.FC = () => {
   return (
     <div id="contact" className="flex w-full justify-center bg-blue-dark">
-      <div className="container py-7">
+      <div className="container py-7 max-sm:px-5">
         <div className="flex items-center justify-between">
           <div className="flex-col">
             <h1 className="text-3xl font-bold">Our mission & Goals</h1>
-            <p className="w-[700px] text-xl">
+
+            <p className="text-xl md:w-[700px]">
               Our club is dedicated to providing a welcoming and supportive
               environment for all cyclists, regardless of their skill level or
               background.
@@ -19,10 +20,11 @@ const Footer: React.FC = () => {
             width={80}
             height={80}
             alt="logo"
+            className="hidden md:block"
           />
         </div>
 
-        <hr className="h-1 w-full rounded border-0 bg-orange-primary md:my-4" />
+        <hr className="my-4 h-1 w-full rounded border-0 bg-orange-primary" />
 
         <div className="container flex justify-between">
           <div

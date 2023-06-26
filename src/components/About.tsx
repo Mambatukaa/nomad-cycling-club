@@ -4,8 +4,9 @@ import Background from "../../public/assets/images/background.jpg";
 
 const About: React.FC = () => {
   return (
-    <div id="about" className="relative flex h-[calc(100vh-64px)]">
-      <div>
+    <div id="about" className="relative flex h-screen">
+
+      <div className="max-md:hidden">
         <Image
           src={Background}
           alt="background image"
@@ -14,7 +15,8 @@ const About: React.FC = () => {
         />
       </div>
 
-      <div className="relative mx-auto grid grid-cols-3 self-center md:container">
+      <div className="relative mx-auto md:grid grid-cols-3 self-center md:container max-md:px-5">
+
         <div className="col-end-4">
           <h1 className="text-5xl font-bold text-yellow">
             We are a team of Mongolian bike riders
@@ -28,6 +30,7 @@ const About: React.FC = () => {
             in our community.
           </p>
         </div>
+
       </div>
     </div>
   );

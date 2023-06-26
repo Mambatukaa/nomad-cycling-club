@@ -11,8 +11,10 @@ const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
   const { fullName, summary, role, avatar } = leader;
 
   return (
-    <div className="mr-8 mt-16">
+    <div className="mt-16">
+
       <div className="relative h-96 max-w-sm rounded-lg bg-white p-8 text-black">
+
         <Image
           className="absolute -top-12 h-24 w-24 rounded-full object-cover"
           src={avatar}
