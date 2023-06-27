@@ -1,4 +1,5 @@
 "use client";
+import { LINKS } from "@/contants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -11,8 +12,8 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="absolute top-0 z-50 flex h-16 w-full justify-center bg-blue-dark">
-      <nav className="container flex items-center max-sm:px-5">
+    <header className="sticky top-0 z-[100] flex w-full justify-center bg-blue-dark md:h-16">
+      <nav className="container flex items-center py-3 max-sm:px-5">
         <Image
           src="/assets/images/logo.png"
           width={80}
@@ -21,7 +22,7 @@ const Header: React.FC = () => {
         />
 
         <div
-          className="ml-auto block cursor-pointer md:hidden"
+          className="absolute right-8 top-5 ml-auto block cursor-pointer md:hidden"
           onClick={() => toggleMenu()}
         >
           <div>
@@ -31,20 +32,17 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        <div className="hidden flex-1 items-center justify-end md:flex">
-          <Link className="menu-item" href="#about">
-            Who we are
-          </Link>
-          <Link className="menu-item" href="#leaders">
-            Leadership
-          </Link>
-          <Link className="menu-item" href="#gallery">
-            Gallery
-          </Link>
-          <Link className="menu-item" href="#contact">
-            Contact
-          </Link>
-        </div>
+        <ul
+          className={` absolute left-0 w-full flex-1 bg-blue-dark pl-5 md:static md:flex md:items-center md:justify-end ${
+            isMenuOpen ? "top-16" : "top-[-490px]"
+          } `}
+        >
+          {LINKS.map((link) => (
+            <li key={link.url} className="menu-item">
+              <Link href={link.url}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );

@@ -128,3 +128,22 @@ export const LEADERS: ILeader[] = [
     ],
   },
 ];
+
+export const LINKS = [
+  {
+    name: "Who we are",
+    url: "#about",
+  },
+  {
+    name: "Leadership",
+    url: "#leaders",
+  },
+  {
+    name: "Gallery",
+    url: "#gallery",
+  },
+  {
+    name: "Contact",
+    url: "#contact",
+  },
+];
