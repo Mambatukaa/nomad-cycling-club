@@ -14,12 +14,14 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-[100] flex w-full justify-center bg-blue-dark md:h-16">
       <nav className="container flex items-center py-3 max-sm:px-5">
-        <Image
-          src="/assets/images/logo.png"
-          width={80}
-          height={80}
-          alt="logo"
-        />
+        <Link href="/#about">
+          <Image
+            src="/assets/images/logo.png"
+            width={80}
+            height={80}
+            alt="logo"
+          />
+        </Link>
 
         <div
           className="absolute right-8 top-5 ml-auto block cursor-pointer md:hidden"
