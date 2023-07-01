@@ -3,8 +3,8 @@ import { ILeader } from "./types";
 export const LEADERS: ILeader[] = [
   {
     id: 1,
-    fullName: "Batbayar Batchuluun",
-    avatar: "/assets/images/profile.JPG",
+    fullName: "Bat-Amgalan Nasan-Ochir",
+    avatar: "/assets/images/leaders/batuka.jpg",
     role: "Team Captain",
     summary:
       "Originally from AZ, Bagi has infiltrated the Nomads quick and now serving as a Captain of the Club as well as US Mongolian Cycling Association. He is a strong rider and a great leader.",

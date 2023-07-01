@@ -21,6 +21,7 @@ const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
           width={80}
           height={80}
           alt="logo"
+          quality={100}
         />
 
         <p className="mt-10 text-lg">{summary}</p>

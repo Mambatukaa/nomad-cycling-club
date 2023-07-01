@@ -12,6 +12,7 @@ const About: React.FC = () => {
           alt="background image"
           fill={true}
           objectFit="cover"
+          quality={100}
         />
         <div className="absolute inset-0 bg-gradient-to-l from-black opacity-40 "></div>
       </div>
