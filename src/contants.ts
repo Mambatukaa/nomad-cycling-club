@@ -4,7 +4,7 @@ export const LEADERS: ILeader[] = [
   {
     id: 1,
     fullName: "Batbayar Batchuluun",
-    avatar: "https://avatars.githubusercontent.com/u/11501555?v=4",
+    avatar: "/assets/images/profile.JPG",
     role: "Team Captain",
     summary:
       "Originally from AZ, Bagi has infiltrated the Nomads quick and now serving as a Captain of the Club as well as US Mongolian Cycling Association. He is a strong rider and a great leader.",
@@ -139,8 +139,8 @@ export const LINKS = [
     url: "#leaders",
   },
   {
-    name: "Gallery",
-    url: "#gallery",
+    name: "Albums",
+    url: "#albums",
   },
   {
     name: "Contact",
