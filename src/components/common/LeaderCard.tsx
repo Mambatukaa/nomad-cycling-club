@@ -13,7 +13,7 @@ const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
   return (
     <div className="mt-16">
 
-      <div className="relative h-96 max-w-sm rounded-lg bg-white p-8 text-black">
+      <div className="relative h-[26rem] max-w-md rounded-xl bg-white p-8 text-black shadow-lg">
 
         <Image
           className="absolute -top-12 h-24 w-24 rounded-full object-cover"
@@ -23,9 +23,9 @@ const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
           alt="logo"
         />
 
-        <p className="mb-8 mt-10 text-lg">{summary}</p>
+        <p className="mt-10 text-lg">{summary}</p>
 
-        <hr className="my-3 h-0.5 rounded bg-black" />
+        <hr className="mb-10 mt-16 h-0.5 rounded bg-gray-200" />
 
         <div>
           <p className="font-bold">{fullName}</p>
@@ -37,11 +37,11 @@ const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
               href="https://www.facebook.com/nomadcyclingclub"
               target="_blank"
               role="button"
-              className="mr-1.5 rounded-full bg-gray-300 p-1"
+              className="mr-1.5"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 rounded-full bg-social-facebook p-1"
+                className="h-6 w-6 rounded-full bg-social-facebook p-1"
                 fill="white"
                 viewBox="0 0 24 24"
               >
@@ -53,11 +53,11 @@ const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
               href="https://www.facebook.com/nomadcyclingclub"
               target="_blank"
               role="button"
-              className="mr-1 rounded-full bg-gray-300 p-1"
+              className="mr-1"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 rounded-full bg-social-twitter p-1"
+                className="h-6 w-6 rounded-full bg-social-twitter p-1"
                 fill="white"
                 viewBox="0 0 24 24"
               >
