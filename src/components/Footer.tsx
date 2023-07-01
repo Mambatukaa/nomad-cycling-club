@@ -8,23 +8,16 @@ const Footer: React.FC = () => {
           <div className="flex-col">
             <h1 className="text-3xl font-bold">Our mission & Goals</h1>
 
-            <p className="text-xl md:w-[700px]">
+            <p className="text-xl md:w-[700px] font-light">
               Our club is dedicated to providing a welcoming and supportive
               environment for all cyclists, regardless of their skill level or
               background.
             </p>
           </div>
 
-          <Image
-            src="/assets/images/logo.png"
-            width={80}
-            height={80}
-            alt="logo"
-            className="hidden md:block"
-          />
         </div>
 
-        <hr className="my-4 h-1 w-full rounded border-0 bg-orange-primary" />
+        <hr className="my-5 h-1 w-full rounded border-0 bg-orange-primary" />
 
         <div className="container flex justify-between">
           <div
@@ -64,7 +57,7 @@ const Footer: React.FC = () => {
             </a>
           </div>
 
-          <p className="text-sm">Copyright 2023, Nomad Cycling Club.</p>
+          <p className="text-sm font-light">Copyright 2023, Nomad Cycling Club.</p>
         </div>
       </div>
     </div>
