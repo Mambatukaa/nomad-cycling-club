@@ -30,7 +30,7 @@ const Header: React.FC = () => {
         </Link>
 
         <div
-          className="absolute right-8 top-5 ml-auto block cursor-pointer md:hidden"
+          className="absolute right-8 top-5 ml-auto block cursor-pointer lg:hidden"
           onClick={() => toggleMenu()}
         >
           <div>
@@ -41,7 +41,7 @@ const Header: React.FC = () => {
         </div>
 
         <ul
-          className={`absolute left-0 w-full flex-1 bg-blue-dark pl-5 md:static md:flex md:items-center md:justify-end ${
+          className={`absolute left-0 w-full flex-1 bg-blue-dark pl-5 lg:static lg:flex lg:items-center lg:justify-end ${
             isMenuOpen ? "top-16" : "top-[-490px]"
           } `}
         >
