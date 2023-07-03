@@ -11,10 +11,11 @@ const Leaders = () => {
   return (
     <div id="leaders" className="flex bg-gray-200 py-24">
       <div className="container mx-auto">
-        <div className="max-md:px-5">
+        <div className="max-lg:px-5">
           <h1 className="text-5xl font-bold text-blue-primary">
             Nomads Leadership
           </h1>
+
           <p className="mt-4 text-lg text-black md:w-[485px]">
             Our club is dedicated to providing a welcoming and supportive
             environment for all cyclists, regardless of their skill level or
@@ -22,7 +23,7 @@ const Leaders = () => {
           </p>
         </div>
 
-        <div className="my-14 max-md:px-5">
+        <div className="my-14 max-lg:px-5">
           <Swiper
             slidesPerView={1}
             spaceBetween={10}

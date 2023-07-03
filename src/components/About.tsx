@@ -6,7 +6,8 @@ const About: React.FC = () => {
   return (
     <div id="about" className="relative flex h-screen">
 
-      <div className="max-md:hidden">
+      <div className="max-lg:hidden">
+
         <Image
           src={Background}
           alt="background image"
@@ -14,10 +15,11 @@ const About: React.FC = () => {
           objectFit="cover"
           quality={100}
         />
+
         <div className="absolute inset-0 bg-gradient-to-l from-black opacity-40 "></div>
       </div>
 
-      <div className="relative mx-auto md:grid grid-cols-3 self-center md:container max-md:px-5">
+      <div className="relative mx-auto lg:grid grid-cols-3 self-center md:container max-lg:px-5">
 
         <div className="col-end-4">
           <h1 className="text-5xl font-bold text-yellow leading-tight">

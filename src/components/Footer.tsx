@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer: React.FC = () => {
   return (
     <div id="contact" className="flex w-full justify-center bg-blue-dark">
-      <div className="container py-7 max-sm:px-5">
+      <div className="container py-7 max-lg:px-5">
         <div className="flex items-center justify-between">
           <div className="flex-col">
             <h1 className="text-3xl font-bold">Our mission & Goals</h1>
