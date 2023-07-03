@@ -11,9 +11,15 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToDocumentById = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="sticky top-0 z-[100] flex w-full justify-center bg-blue-dark md:h-16">
-      <nav className="container flex items-center py-3 max-sm:px-5">
+      <nav className="container flex items-center py-3 max-lg:px-5">
         <Link href="/#about">
           <Image
             src="/assets/images/logo.png"
@@ -35,13 +41,15 @@ const Header: React.FC = () => {
         </div>
 
         <ul
-          className={` absolute left-0 w-full flex-1 bg-blue-dark pl-5 md:static md:flex md:items-center md:justify-end ${
+          className={`absolute left-0 w-full flex-1 bg-blue-dark pl-5 md:static md:flex md:items-center md:justify-end ${
             isMenuOpen ? "top-16" : "top-[-490px]"
           } `}
         >
           {LINKS.map((link) => (
-            <li key={link.url} className="menu-item">
-              <Link href={link.url}>{link.name}</Link>
+            <li key={link.id} className="menu-item">
+              <button onClick={() => scrollToDocumentById(link.id)}>
+                {link.name}
+              </button>
             </li>
           ))}
         </ul>

@@ -132,18 +132,18 @@ export const LEADERS: ILeader[] = [
 export const LINKS = [
   {
     name: "Who we are",
-    url: "#about",
+    id: "about",
   },
   {
     name: "Leadership",
-    url: "#leaders",
+    id: "leaders",
   },
   {
     name: "Albums",
-    url: "#albums",
+    id: "albums",
   },
   {
     name: "Contact",
-    url: "#contact",
+    id: "contact",
   },
 ];
