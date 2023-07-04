@@ -31,6 +31,6 @@ body {
 
 @layer components {
   .menu-item {
-    @apply h-full cursor-pointer md:pl-7 font-bold text-white hover:text-yellow active:text-yellow md:my-0 my-7;
+    @apply h-full cursor-pointer lg:pl-7 font-bold text-white hover:text-yellow active:text-yellow lg:my-0 my-7;
   }
 }
