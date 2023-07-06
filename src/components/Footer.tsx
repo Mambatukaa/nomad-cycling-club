@@ -3,12 +3,13 @@ import Image from "next/image";
 const Footer: React.FC = () => {
   return (
     <div id="contact" className="flex w-full justify-center bg-blue-dark">
-      <div className="container py-7 max-lg:px-5">
+      <div className="container py-14 max-lg:px-5">
         <div className="flex items-center justify-between">
+
           <div className="flex-col">
             <h1 className="text-3xl font-bold">Our mission & Goals</h1>
 
-            <p className="text-xl md:w-[700px] font-light">
+            <p className="text-xl md:w-[700px] font-light leading-snug mt-4">
               Our club is dedicated to providing a welcoming and supportive
               environment for all cyclists, regardless of their skill level or
               background.
