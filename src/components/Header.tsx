@@ -21,11 +21,15 @@ const Header: React.FC = () => {
     <header className="sticky top-0 z-[100] flex w-full justify-center bg-blue-dark md:h-16">
       <nav className="container flex items-center py-3 max-lg:px-5">
         <Link href="/#about">
+
           <Image
             src="/assets/images/logo.png"
-            width={80}
-            height={80}
+            width={85}
+            height={44}
+            style={{height: 44, width: 85}}
+            quality={100}
             alt="logo"
+            priority={true}
           />
         </Link>
 
