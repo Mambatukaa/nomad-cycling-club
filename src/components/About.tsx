@@ -1,14 +1,12 @@
 import Image from "next/image";
 
-import Background from "../../public/assets/images/background.jpg";
-
 const About: React.FC = () => {
   return (
     <div id="about" className="relative flex h-screen">
       <div>
 
         <Image
-          src={Background}
+          src={"/assets/images/background.jpg"}
           alt="background image"
           fill={true}
           objectFit="cover"
