@@ -1,6 +1,6 @@
 "use client";
 import LeaderCard from "./common/LeaderCard";
-import { LEADERS } from "../contants";
+import { LEADERS } from "../constants";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
