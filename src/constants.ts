@@ -1,4 +1,4 @@
-import { ILeader } from "./types";
+import { ILeader, ISocialAccount } from "./types";
 
 export const LEADERS: ILeader[] = [
   {
@@ -14,7 +14,11 @@ export const LEADERS: ILeader[] = [
         url: "https://www.facebook.com/batbayar.batchuluun",
       },
       {
-        name: "twitter",
+        name: "linkedin",
+        url: "https://www.twitter.com/batbayar.batchuluun",
+      },
+      {
+        name: "instagram",
         url: "https://www.twitter.com/batbayar.batchuluun",
       },
     ],
@@ -29,11 +33,15 @@ export const LEADERS: ILeader[] = [
     socialAccounts: [
       {
         name: "facebook",
-        url: "https://www.facebook.com/boldbaatar.batchuluun",
+        url: "https://www.facebook.com/batbayar.batchuluun",
       },
       {
-        name: "twitter",
-        url: "https://www.twitter.com/boldbaatar.batchuluun",
+        name: "linkedin",
+        url: "https://www.twitter.com/batbayar.batchuluun",
+      },
+      {
+        name: "instagram",
+        url: "https://www.twitter.com/batbayar.batchuluun",
       },
     ],
   },
@@ -47,11 +55,15 @@ export const LEADERS: ILeader[] = [
     socialAccounts: [
       {
         name: "facebook",
-        url: "https://www.facebook.com/boldbaatar.batchuluun",
+        url: "https://www.facebook.com/batbayar.batchuluun",
       },
       {
-        name: "twitter",
-        url: "https://www.twitter.com/boldbaatar.batchuluun",
+        name: "linkedin",
+        url: "https://www.twitter.com/batbayar.batchuluun",
+      },
+      {
+        name: "instagram",
+        url: "https://www.twitter.com/batbayar.batchuluun",
       },
     ],
   },
@@ -65,11 +77,15 @@ export const LEADERS: ILeader[] = [
     socialAccounts: [
       {
         name: "facebook",
-        url: "https://www.facebook.com/boldbaatar.batchuluun",
+        url: "https://www.facebook.com/batbayar.batchuluun",
       },
       {
-        name: "twitter",
-        url: "https://www.twitter.com/boldbaatar.batchuluun",
+        name: "linkedin",
+        url: "https://www.twitter.com/batbayar.batchuluun",
+      },
+      {
+        name: "instagram",
+        url: "https://www.twitter.com/batbayar.batchuluun",
       },
     ],
   },
@@ -83,11 +99,15 @@ export const LEADERS: ILeader[] = [
     socialAccounts: [
       {
         name: "facebook",
-        url: "https://www.facebook.com/boldbaatar.batchuluun",
+        url: "https://www.facebook.com/batbayar.batchuluun",
       },
       {
-        name: "twitter",
-        url: "https://www.twitter.com/boldbaatar.batchuluun",
+        name: "linkedin",
+        url: "https://www.twitter.com/batbayar.batchuluun",
+      },
+      {
+        name: "instagram",
+        url: "https://www.twitter.com/batbayar.batchuluun",
       },
     ],
   },
@@ -101,11 +121,15 @@ export const LEADERS: ILeader[] = [
     socialAccounts: [
       {
         name: "facebook",
-        url: "https://www.facebook.com/boldbaatar.batchuluun",
+        url: "https://www.facebook.com/batbayar.batchuluun",
       },
       {
-        name: "twitter",
-        url: "https://www.twitter.com/boldbaatar.batchuluun",
+        name: "linkedin",
+        url: "https://www.twitter.com/batbayar.batchuluun",
+      },
+      {
+        name: "instagram",
+        url: "https://www.twitter.com/batbayar.batchuluun",
       },
     ],
   },
@@ -119,11 +143,15 @@ export const LEADERS: ILeader[] = [
     socialAccounts: [
       {
         name: "facebook",
-        url: "https://www.facebook.com/boldbaatar.batchuluun",
+        url: "https://www.facebook.com/batbayar.batchuluun",
       },
       {
-        name: "twitter",
-        url: "https://www.twitter.com/boldbaatar.batchuluun",
+        name: "linkedin",
+        url: "https://www.twitter.com/batbayar.batchuluun",
+      },
+      {
+        name: "instagram",
+        url: "https://www.twitter.com/batbayar.batchuluun",
       },
     ],
   },
@@ -145,5 +173,20 @@ export const LINKS = [
   {
     name: "Contact",
     id: "contact",
+  },
+];
+
+export const SOCIAL_ACCOUNTS: ISocialAccount[] = [
+  {
+    name: "facebook",
+    url: "https://www.facebook.com/nomadcyclingclub",
+  },
+  {
+    name: "sharepoint",
+    url: "https://nomadcyclingclub.sharepoint.com/",
+  },
+  {
+    name: "email",
+    url: "mailto:support@nomadcyclingclub.com",
   },
 ];
