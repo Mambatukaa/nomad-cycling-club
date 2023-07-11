@@ -9,9 +9,8 @@ const About: React.FC = () => {
           src={"/assets/images/background.jpg"}
           alt="background image"
           fill={true}
-          objectFit="cover"
+          style={{ objectPosition: 'left', objectFit:'cover'}}
           quality={100}
-          objectPosition="left"
         />
 
         <div className="absolute inset-0 bg-gradient-to-l from-black opacity-40 max-lg:opacity-60 max-lg:bg-black"></div>
