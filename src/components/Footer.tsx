@@ -2,6 +2,9 @@ import Email from "../../public/assets/logos/email.svg";
 import SharePoint from "../../public/assets/logos/sharepoint.svg";
 import Facebook from "../../public/assets/logos/facebook.svg";
 
+import { SOCIAL_ACCOUNTS } from "../constants";
+import SocialIcon from "./common/SocialIcon";
+
 const Footer: React.FC = () => {
   return (
     <div id="contact" className="flex w-full justify-center bg-blue-dark">
@@ -22,32 +25,16 @@ const Footer: React.FC = () => {
 
         <div className="container flex items-center justify-between">
           <div className="flex">
-            <a
-              href="https://www.facebook.com/nomadcyclingclub"
-              target="_blank"
-              role="button"
-              className="mr-1.5"
-            >
-              <Facebook className="h-8 w-8 rounded-full border border-white fill-white p-1.5 hover:bg-white hover:fill-blue-dark" />
-            </a>
-
-            <a
-              href="https://nomadcyclingclub.sharepoint.com/"
-              target="_blank"
-              role="button"
-              className="mr-1.5"
-            >
-              <SharePoint className="h-8 w-8 rounded-full border border-white fill-white p-1.5 hover:bg-white hover:fill-blue-dark" />
-            </a>
-
-            <a
-              href="mailto:support@nomadcyclingclub.com"
-              target="_blank"
-              role="button"
-              className="mr-1.5"
-            >
-              <Email className="h-8 w-8 rounded-full border border-white fill-white p-1.5 hover:bg-white hover:fill-blue-dark" />
-            </a>
+            {SOCIAL_ACCOUNTS.map((account) => {
+              return (
+                <SocialIcon
+                  key={account.name}
+                  name={account.name}
+                  url={account.url}
+                  customStyle="fill-white p-1.5 hover:bg-white hover:fill-blue-dark h-8 w-8"
+                />
+              );
+            })}
           </div>
 
           <p className="text-sm">Copyright 2023, Nomad Cycling Club.</p>

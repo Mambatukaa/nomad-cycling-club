@@ -1,18 +1,15 @@
 import { ILeader } from "@/types";
 import React, { FC, ReactElement } from "react";
 
-import Instagram from "../../../public/assets/logos/instagram.svg";
-import Facebook from "../../../public/assets/logos/facebook.svg";
-import Linkedin from "../../../public/assets/logos/linkedin.svg";
-
 import Image from "next/image";
+import SocialIcon from "./SocialIcon";
 
 type LeaderCardProps = {
   leader: ILeader;
 };
 
 const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
-  const { fullName, summary, role, avatar } = leader;
+  const { fullName, summary, role, avatar, socialAccounts } = leader;
 
   return (
     <div className="mt-16 h-128">
@@ -36,32 +33,14 @@ const LeaderCard: FC<LeaderCardProps> = ({ leader }): ReactElement => {
           <p className="text-gray-500">{role}</p>
 
           <div className="mt-2 flex">
-            <a
-              href="https://www.facebook.com/nomadcyclingclub"
-              target="_blank"
-              role="button"
-              className="mr-1.5"
-            >
-              <Facebook className="h-7 w-7 rounded-full border border-blue-dark fill-blue-dark  p-1.5 hover:bg-blue-primary hover:fill-white" />
-            </a>
-
-            <a
-              href="https://www.facebook.com/nomadcyclingclub"
-              target="_blank"
-              role="button"
-              className="mr-1.5"
-            >
-              <Linkedin className="h-7 w-7 rounded-full border border-blue-dark fill-blue-dark p-0.5 hover:bg-blue-primary hover:fill-white" />
-            </a>
-
-            <a
-              href="https://www.facebook.com/nomadcyclingclub"
-              target="_blank"
-              role="button"
-              className="mr-1.5"
-            >
-              <Instagram className="h-7 w-7 rounded-full border border-blue-dark fill-blue-dark  p-1 hover:bg-blue-primary hover:fill-white" />
-            </a>
+            {(socialAccounts || []).map((socialAccount) => (
+              <SocialIcon
+                key={socialAccount.name}
+                name={socialAccount.name}
+                url={socialAccount.url}
+                customStyle="border-blue-dark fill-blue-dark p-1 hover:bg-blue-primary hover:fill-white h-7 w-7"
+              />
+            ))}
           </div>
         </div>
       </div>
