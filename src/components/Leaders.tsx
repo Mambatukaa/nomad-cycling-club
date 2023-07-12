@@ -2,12 +2,13 @@
 import LeaderCard from "./common/LeaderCard";
 import { LEADERS } from "../constants";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Section from "./common/Section";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
-import Section from "./common/Section";
 
 const Leaders = () => {
   return (

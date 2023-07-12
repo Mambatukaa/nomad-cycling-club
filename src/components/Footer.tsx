@@ -1,7 +1,3 @@
-import Email from "../../public/assets/logos/email.svg";
-import SharePoint from "../../public/assets/logos/sharepoint.svg";
-import Facebook from "../../public/assets/logos/facebook.svg";
-
 import { SOCIAL_ACCOUNTS } from "../constants";
 import SocialIcon from "./common/SocialIcon";
 
