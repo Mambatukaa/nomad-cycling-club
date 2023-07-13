@@ -15,7 +15,7 @@
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "eslint": "8.40.0",
-    "eslint-config-next": "13.4.2",
+    "eslint-config-next": "^13.4.9",
     "next": "13.4.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
@@ -26,6 +26,9 @@
     "yet-another-react-lightbox": "^3.11.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0"
   }
