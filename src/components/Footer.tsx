@@ -1,9 +1,12 @@
-import { SOCIAL_ACCOUNTS } from "../constants";
-import SocialIcon from "./common/SocialIcon";
+import { SOCIAL_ACCOUNTS } from '../constants';
+import SocialIcon from './common/SocialIcon';
 
 const Footer: React.FC = () => {
   return (
-    <div id="contact" className="flex w-full justify-center bg-blue-dark scroll-mt-16">
+    <div
+      id="contact"
+      className="flex w-full scroll-mt-16 justify-center bg-blue-dark"
+    >
       <div className="container py-14 max-lg:px-5">
         <div className="flex items-center justify-between">
           <div className="flex-col">

@@ -1,10 +1,10 @@
-import { FC, ReactElement } from "react";
+import { FC, ReactElement } from 'react';
 
-import Email from "../../../public/assets/logos/email.svg";
-import SharePoint from "../../../public/assets/logos/sharepoint.svg";
-import Facebook from "../../../public/assets/logos/facebook.svg";
-import Instagram from "../../../public/assets/logos/instagram.svg";
-import Linkedin from "../../../public/assets/logos/linkedin.svg";
+import Email from '../../../public/assets/logos/email.svg';
+import SharePoint from '../../../public/assets/logos/sharepoint.svg';
+import Facebook from '../../../public/assets/logos/facebook.svg';
+import Instagram from '../../../public/assets/logos/instagram.svg';
+import Linkedin from '../../../public/assets/logos/linkedin.svg';
 
 interface IProps {
   name: string;
@@ -19,16 +19,16 @@ const SocialIcon: FC<IProps> = ({ name, url, customStyle }): ReactElement => {
     let Component = <Facebook className={style} />;
 
     switch (name) {
-      case "email":
+      case 'email':
         Component = <Email className={style} />;
         break;
-      case "sharepoint":
+      case 'sharepoint':
         Component = <SharePoint className={style} />;
         break;
-      case "instagram":
+      case 'instagram':
         Component = <Instagram className={style} />;
         break;
-      case "linkedin":
+      case 'linkedin':
         Component = <Linkedin className={style} />;
         break;
       default:

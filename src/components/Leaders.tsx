@@ -1,18 +1,17 @@
-"use client";
-import LeaderCard from "./common/LeaderCard";
-import { LEADERS } from "../constants";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Section from "./common/Section";
+'use client';
+import LeaderCard from './common/LeaderCard';
+import { LEADERS } from '../constants';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Section from './common/Section';
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
-
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper';
 
 const Leaders = () => {
   return (
-    <div id="leaders" className="flex bg-gray-200 scroll-mt-16">
+    <div id="leaders" className="flex scroll-mt-16 bg-gray-200">
       <Section
         title="Nomads Leadership"
         description={`

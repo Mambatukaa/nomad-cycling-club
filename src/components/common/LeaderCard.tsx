@@ -1,8 +1,8 @@
-import { ILeader } from "@/types";
-import React, { FC, ReactElement } from "react";
+import { ILeader } from '@/types';
+import React, { FC, ReactElement } from 'react';
 
-import Image from "next/image";
-import SocialIcon from "./SocialIcon";
+import Image from 'next/image';
+import SocialIcon from './SocialIcon';
 
 type LeaderCardProps = {
   leader: ILeader;

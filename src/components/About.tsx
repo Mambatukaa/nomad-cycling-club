@@ -1,19 +1,18 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const About: React.FC = () => {
   return (
     <div id="about" className="relative flex h-screen scroll-mt-16">
       <div>
-
         <Image
-          src={"/assets/images/background.jpg"}
+          src={'/assets/images/background.jpg'}
           alt="background image"
           fill={true}
-          style={{ objectPosition: 'left', objectFit:'cover'}}
+          style={{ objectPosition: 'left', objectFit: 'cover' }}
           quality={100}
         />
 
-        <div className="absolute inset-0 bg-gradient-to-l from-black opacity-40 max-lg:opacity-60 max-lg:bg-black"></div>
+        <div className="absolute inset-0 bg-gradient-to-l from-black opacity-40 max-lg:bg-black max-lg:opacity-60"></div>
       </div>
 
       <div className="relative mx-auto grid-cols-3 self-center md:container max-lg:px-5 lg:grid">

@@ -1,6 +1,6 @@
-import * as React from "react";
-import GalleryCard from "./common/GalleryCard";
-import Section from "./common/Section";
+import * as React from 'react';
+import GalleryCard from './common/GalleryCard';
+import Section from './common/Section';
 
 const Gallery = () => {
   return (

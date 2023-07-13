@@ -1,10 +1,10 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
+import './globals.css';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Nomad cycling club",
+  title: 'Nomad cycling club',
 };
 
 export default function RootLayout({

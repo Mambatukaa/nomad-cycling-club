@@ -1,16 +1,16 @@
-"use client";
-import Image from "next/image";
-import { ReactElement, FC, useState } from "react";
+'use client';
+import Image from 'next/image';
+import { ReactElement, FC, useState } from 'react';
 
 // import lightbox styles
-import "yet-another-react-lightbox/styles.css";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import "yet-another-react-lightbox/plugins/counter.css";
+import 'yet-another-react-lightbox/styles.css';
+import 'yet-another-react-lightbox/plugins/thumbnails.css';
+import 'yet-another-react-lightbox/plugins/counter.css';
 
-import Lightbox from "yet-another-react-lightbox";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import Counter from "yet-another-react-lightbox/plugins/counter";
+import Lightbox from 'yet-another-react-lightbox';
+import Thumbnails from 'yet-another-react-lightbox/plugins/thumbnails';
+import Zoom from 'yet-another-react-lightbox/plugins/zoom';
+import Counter from 'yet-another-react-lightbox/plugins/counter';
 
 interface IProps {
   title: string;
@@ -25,10 +25,10 @@ const GalleryCard: FC<IProps> = ({
 }): ReactElement => {
   const [open, setOpen] = useState(false);
 
-  const [slides, setSlides] = useState([
-    { src: "/assets/images/gallery/covers/image1.jpeg" },
-    { src: "/assets/images/gallery/covers/image2.jpeg" },
-    { src: "/assets/images/gallery/covers/image3.jpeg" },
+  const [slides] = useState([
+    { src: '/assets/images/gallery/covers/image1.jpeg' },
+    { src: '/assets/images/gallery/covers/image2.jpeg' },
+    { src: '/assets/images/gallery/covers/image3.jpeg' },
   ]);
 
   return (
@@ -42,7 +42,7 @@ const GalleryCard: FC<IProps> = ({
               <div className="opacity-90 md:text-sm">
                 {description ||
                   `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Distinctio dolores error iure, perferendis sequi totam.`}{" "}
+                Distinctio dolores error iure, perferendis sequi totam.`}{' '}
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ const GalleryCard: FC<IProps> = ({
 
       <Lightbox
         open={open}
-        counter={{ container: { style: { top: "unset", bottom: 0 } } }}
+        counter={{ container: { style: { top: 'unset', bottom: 0 } } }}
         plugins={[Thumbnails, Zoom, Counter]}
         close={() => setOpen(false)}
         slides={slides}

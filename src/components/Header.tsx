@@ -1,8 +1,7 @@
-"use client";
-import { LINKS } from "@/constants";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+'use client';
+import { LINKS } from '@/constants';
+import Image from 'next/image';
+import { useState } from 'react';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,14 +12,14 @@ const Header: React.FC = () => {
 
   const scrollToDocumentById = (id: string) => {
     document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   return (
     <header className="sticky top-0 z-[100] flex w-full justify-center bg-blue-dark md:h-16">
       <nav className="container flex items-center py-3 max-lg:px-5">
-        <button onClick={() => scrollToDocumentById("about")}>
+        <button onClick={() => scrollToDocumentById('about')}>
           <Image
             src="/assets/images/logo.png"
             width={85}
@@ -45,7 +44,7 @@ const Header: React.FC = () => {
 
         <ul
           className={`absolute left-0 w-full flex-1 bg-blue-dark pl-5 lg:static lg:flex lg:items-center lg:justify-end ${
-            isMenuOpen ? "top-16" : "top-[-490px]"
+            isMenuOpen ? 'top-16' : 'top-[-490px]'
           } `}
         >
           {LINKS.map((link) => (
