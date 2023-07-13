@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About: React.FC = () => {
   return (
-    <div id="about" className="relative flex h-screen">
+    <div id="about" className="relative flex h-screen scroll-mt-16">
       <div>
 
         <Image

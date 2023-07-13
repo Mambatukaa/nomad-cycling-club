@@ -12,7 +12,7 @@ import { Pagination } from "swiper";
 
 const Leaders = () => {
   return (
-    <div id="leaders" className="flex bg-gray-200">
+    <div id="leaders" className="flex bg-gray-200 scroll-mt-16">
       <Section
         title="Nomads Leadership"
         description={`

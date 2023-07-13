@@ -22,7 +22,7 @@ const Gallery = () => {
   ]);
 
   return (
-    <div id="albums" className="flex bg-gray-100">
+    <div id="albums" className="flex bg-gray-100 scroll-mt-16">
       <Section
         title="Photo Albums"
         description={`

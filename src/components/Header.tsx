@@ -20,18 +20,17 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-[100] flex w-full justify-center bg-blue-dark md:h-16">
       <nav className="container flex items-center py-3 max-lg:px-5">
-        <Link href="/#about">
-
+        <button onClick={() => scrollToDocumentById("about")}>
           <Image
             src="/assets/images/logo.png"
             width={85}
             height={44}
-            style={{height: 44, width: 85}}
+            style={{ height: 44, width: 85 }}
             quality={100}
             alt="logo"
             priority={true}
           />
-        </Link>
+        </button>
 
         <div
           className="absolute right-8 top-5 ml-auto block cursor-pointer lg:hidden"
