@@ -44,10 +44,6 @@ module.exports = {
         linkedin: "#0077B5",
       },
     },
-    fontFamily: {
-      sans: ["Inter", "sans-serif"],
-      serif: ["Inter", "sans-serif"],
-    },
     fontSize: {
       sm: "0.875rem", // 14px
       base: "1rem", // 16px
