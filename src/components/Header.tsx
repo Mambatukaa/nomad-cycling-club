@@ -1,6 +1,7 @@
 'use client';
 import { LINKS } from '@/constants';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 const Header: React.FC = () => {
@@ -47,6 +48,16 @@ const Header: React.FC = () => {
             isMenuOpen ? 'top-16' : 'top-[-490px]'
           } `}
         >
+          <li className="menu-item">
+            <Link
+              className="text-yellow"
+              href="https://sway.cloud.microsoft/WrM6W2SYt01arQzT?fbclid=IwAR0lwVqsjsTY4qNewQuUnx24ELKHWkbDLcU7HdUmNk-q7UFjY9tOPJ9Bn48_aem_ATnKq9BHl2qnqFOSmmk51ITx4BJdW8f0rQrguqjjRC-F_XRoSx1Vnf9jwrT4EQYc9EoBogQCL6OokKg2rq1G_LfC"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Cycling Challenge
+            </Link>
+          </li>
           {LINKS.map((link) => (
             <li key={link.id} className="menu-item">
               <button onClick={() => scrollToDocumentById(link.id)}>
