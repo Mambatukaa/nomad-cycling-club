@@ -3,7 +3,6 @@
 import About from '@/components/About';
 import Leaders from '@/components/Leaders';
 import Gallery from '@/components/Gallery';
-import Challenge from '@/components/Challenge';
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -28,7 +27,6 @@ export default function Home() {
 
   return (
     <main>
-      <Challenge />
       <About />
       <Leaders />
       <Gallery />
