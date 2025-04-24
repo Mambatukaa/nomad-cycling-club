@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             })}
           </div>
 
-          <p className="text-sm">Copyright 2024, Nomad Cycling Club.</p>
+          <p className="text-sm">Copyright 2025, Nomad Cycling Club.</p>
         </div>
       </div>
     </div>
