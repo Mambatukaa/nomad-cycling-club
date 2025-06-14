@@ -1,5 +1,0 @@
-{
-  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
-  "appService.defaultWebAppToDeploy": "/subscriptions/d1403a90-f951-4b78-b008-a2a5f1cbcd7d/resourceGroups/NomadWebsite/providers/Microsoft.Web/sites/nomadwebsite",
-  "appService.deploySubpath": "."
-}

@@ -1,5 +1,5 @@
 {
-  "name": "nomad",
+  "name": "tailwind-plus-keynote",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,28 +8,26 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@svgr/webpack": "^8.0.1",
-    "@types/node": "20.1.4",
-    "@types/react": "18.2.6",
-    "@types/react-dom": "18.2.4",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.40.0",
-    "eslint-config-next": "^13.4.9",
-    "next": "13.4.2",
-    "postcss": "8.4.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "swiper": "^9.3.2",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.0.4",
-    "yet-another-react-lightbox": "^3.11.1"
+    "@headlessui/react": "^2.1.0",
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/postcss": "^4.1.7",
+    "@types/node": "^20.10.8",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18",
+    "clsx": "^2.1.0",
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-unused-imports": "^3.0.0",
-    "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.3.0"
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.0.4",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "sharp": "0.33.1"
   }
 }

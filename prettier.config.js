@@ -1,7 +1,7 @@
+/** @type {import('prettier').Options} */
 module.exports = {
-  plugins: [require('prettier-plugin-tailwindcss')],
-  trailingComma: 'es5',
   singleQuote: true,
-  tabWidth: 2,
-  printWidth: 80,
-};
+  semi: false,
+  plugins: ['prettier-plugin-tailwindcss'],
+  tailwindStylesheet: './src/styles/tailwind.css',
+}
